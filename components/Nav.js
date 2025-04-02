@@ -1,12 +1,28 @@
+import styles from './Nav.module.css';
+
 export default function Nav() {
   return (
-    <nav>
-      <a href="/">Home</a> | 
-      <a href="/contact">Contact</a> | 
-      <a href="/announcements">Announcements</a> | 
-      <a href="/documents">Documents</a> | 
-      <a href="/maintenance">Maintenance</a> | 
-      <a href="/gallery">Gallery</a>
+    <nav className={styles.navbar}>
+      <ul className={styles.navList}>
+        <li className={styles.navItem}>
+          <a href="/" className={styles.navLink}>Home</a>
+        </li>
+        <li className={styles.navItem}>
+          <a href="/documents" className={styles.navLink}>Documents</a>
+        </li>
+        <li className={styles.navItem}>
+          <a href="/announcements" className={styles.navLink}>Announcements</a>
+        </li>
+        <li className={styles.navItem}>
+          <a href="/contact" className={styles.navLink}>Contact</a>
+        </li>
+        <li className={styles.navItem}>
+          <a href="/gallery" className={styles.navLink}>Gallery</a>
+        </li>
+        <li className={styles.navItem}>
+          <a href="/maintenance" className={styles.navLink}>Maintenance</a>
+        </li>
+      </ul>
     </nav>
   );
 }

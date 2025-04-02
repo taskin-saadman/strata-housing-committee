@@ -1,0 +1,30 @@
+.navbar {
+  background-color: #0056b3; /* Professional blue background */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  font-size: 1.2rem; /* Bigger font size for a professional look */
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #ffcc00; /* Highlight color on hover */
+}

@@ -1,17 +1,33 @@
 import Nav from '../../components/Nav';
+import styles from './announcements.module.css';
 
-export default function ContactPage() {
+export default function AnnouncementsPage() {
   return (
-    <main>
+    <main className={styles.mainContainer}>
       <Nav />
-      <h1>Contact Us</h1>
-      <form>
-        <label>Name:</label><br />
-        <input type="text" /><br />
-        <label>Message:</label><br />
-        <textarea rows="4" /><br />
-        <button type="submit">Send</button>
-      </form>
+      <h1 className={styles.header}>Announcements</h1>
+      <ul className={styles.list}>
+        <li className={styles.listItem}>
+          <a
+            href="/announcement_1.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
+            Announcement 1
+          </a>
+        </li>
+        <li className={styles.listItem}>
+          <a
+            href="/announcement_2.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
+            Announcement 2
+          </a>
+        </li>
+      </ul>
     </main>
   );
 }

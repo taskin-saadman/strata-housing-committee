@@ -1,0 +1,32 @@
+.bannerContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bannerImage {
+  width: 100%;
+  height: auto;
+}
+
+.bannerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+.mainContent {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.mainContentText {
+  font-size: 1rem;
+  line-height: 1.5;
+}
