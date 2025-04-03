@@ -1,7 +1,14 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Apply the font globally */
 body {
-  font-family: sans-serif;
-  margin: 20px;
-  background-color: #f5f5f5;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333; /* Optional: Set a professional text color */
+  background-color: #f9f9f9; /* Optional: Set a subtle background color */
 }
 
 nav {

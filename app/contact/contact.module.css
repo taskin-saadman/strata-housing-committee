@@ -1,0 +1,49 @@
+.contactHeading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contactForm {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contactForm label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.contactForm button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contactForm button:hover {
+  background-color: #005bb5;
+}
+
+.mapIframe {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  height: 420px;
+}

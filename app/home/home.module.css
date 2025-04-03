@@ -14,10 +14,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 254, 254);
   padding: 10px;
   border-radius: 5px;
-  font-size: 2rem;
+  font-size: 3rem; /* Increase the font size */
+  font-weight: bold; /* Optional: Make the text bold */
+  text-align: center; /* Optional: Center the text */
+  color: #000000; /* Optional: Adjust the color */
 }
 
 .mainContent {
@@ -29,4 +32,24 @@
 .mainContentText {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.mapIframe {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 400px;
+  height: 270px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
