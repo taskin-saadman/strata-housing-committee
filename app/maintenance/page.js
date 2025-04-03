@@ -37,8 +37,6 @@ export default function ContactPage() {
           <textarea rows="4" /><br />
           <button type="submit">SUBMIT REQUEST</button>
         </form>
-        <p>Client Key: {clientKey}</p>
-        <p>User Token: {userToken}</p>
       </h2>
     </main>
   );
