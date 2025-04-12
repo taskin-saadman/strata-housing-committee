@@ -1,0 +1,10 @@
+{
+  "regions": ["syd1"],
+  "buildCommand": "next build",
+  "cron": [
+    {
+      "path": "/api/daily-summary",
+      "schedule": "0 9 * * *"
+    }
+  ]
+}
