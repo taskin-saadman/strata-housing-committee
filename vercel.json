@@ -1,7 +1,7 @@
 {
   "regions": ["syd1"],
   "buildCommand": "next build",
-  "cron": [
+  "crons": [
     {
       "path": "/api/daily-summary",
       "schedule": "0 9 * * *"
