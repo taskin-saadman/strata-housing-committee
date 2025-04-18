@@ -3,9 +3,7 @@ import styles from './Nav.module.css';
 export default function Nav() {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logoContainer}>
-        <img src="../favicon.ico" alt="Favicon" className={styles.favicon} />
-      </div>
+      <img src="../favicon.ico" alt="Favicon" className={styles.favicon} />
       <ul className={styles.navList}>
         <li className={styles.navItem}>
           <a href="/" className={styles.navLink}>Home</a>
