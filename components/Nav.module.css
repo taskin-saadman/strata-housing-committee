@@ -30,7 +30,8 @@
 }
 
 .favicon {
-  width: 20px;
-  height: 20px;
+  width: 45px;
+  height: 45px;
   margin-right: 10px; /* Space between icon and text */
+  text-align: left;
 }
