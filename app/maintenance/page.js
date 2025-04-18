@@ -1,43 +1,59 @@
+'use client';
 import Nav from '../../components/Nav';
 import './page.css';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 
-export default function ContactPage() {
-  const clientKey = process.env.client_key;
-  const userToken = process.env.user_token;
+export default function MaintenanceRequestPage() {
+  const router = useRouter();
+  const [formData, setFormData] = useState({
+    name: '',
+    unit: '',
+    issue: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Maintenance request:', formData);
+    router.push('/maintenance/thank-you');
+  };
 
   return (
     <main>
       <Nav />
-      <h1>Lodge a Maintenance Request</h1>
-      <h2>
-        <form>
-          <label>Maintenance type</label>
-          <select>
-            <option value="general">General</option>
-            <option value="urgent">Urgent</option>
-            <option value="emergency">Emergency</option>
-          </select><br />
-          <label>Contact method</label>
-          <select>
-            <option value="email">Email</option>
-            <option value="phone">Phone</option>
-            <option value="chat">Chat</option>
-          </select><br />
-          <label>Contact details</label>
-          <input type="text" /><br />
-          <label>Preferred contact time</label>
-          <select>
-            <option value="morning">Morning</option>
-            <option value="afternoon">Afternoon</option>
-            <option value="evening">Evening</option>
-          </select><br />
-          <label>Name:</label>
-          <input type="text" /><br />
-          <label>Message:</label>
-          <textarea rows="4" /><br />
-          <button type="submit">SUBMIT REQUEST</button>
-        </form>
-      </h2>
+      <h1 className="contactHeading">Submit Maintenance Request</h1>
+      <form onSubmit={handleSubmit} className="form">
+        <div className="container">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            onChange={handleChange}
+            required
+          />
+          <br />
+          <input
+            type="text"
+            name="unit"
+            placeholder="Unit Number"
+            onChange={handleChange}
+            required
+          />
+          <br />
+          <textarea
+            name="issue"
+            placeholder="Describe the issue"
+            onChange={handleChange}
+            required
+          />
+          <br />
+          <button type="submit">Send</button>
+        </div>
+      </form>
     </main>
   );
 }
