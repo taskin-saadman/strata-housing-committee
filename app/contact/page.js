@@ -1,5 +1,6 @@
 'use client'
-import styles from './contact.module.css'
+import Nav from '../../components/Nav';
+import styles from './contact.module.css';
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 
